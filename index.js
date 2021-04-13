@@ -43,6 +43,12 @@ const generatePassword = () => {
 
   //   On execute la commande la copier le texte
   document.execCommand("copy");
+
+  generateButton.innerHTML = "Copié !";
+
+  setTimeout(() => {
+    generateButton.innerHTML = "Générer le mot de passe";
+  }, 2000);
 };
 
 // // event listener sur le click fonction + get element
