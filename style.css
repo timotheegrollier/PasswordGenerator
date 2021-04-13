@@ -90,7 +90,7 @@ button:hover {
     height: 30px;
   }
   #passwordOutput {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   .checkbox-container {
@@ -102,4 +102,10 @@ button:hover {
   input[type="range"] {
     width: 80px;
   }
-} ;
+}
+
+@media screen and (max-width: 200px) {
+  #passwordOutput {
+    font-size: 0.6rem;
+  }
+}
