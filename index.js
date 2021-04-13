@@ -2,14 +2,37 @@ const dataLowercase = "azertyuiopqsdfghjklmwxcvbn";
 const dataUppercase = dataLowercase.toUpperCase();
 const dataNumbers = "0123456789";
 const dataSymbols = "!:;,?./§ù^$*µ£¨%=)àç_è-(é&";
+const button = document.getElementById("generateButton");
+const rangeLength = document.getElementById("display-password-length");
+
+console.log(rangeLength.value);
+
+//Spread Operator ... Pour avoir tout les élément sur un tour de tableau
 
 const generatePassword = () => {
   let data = [];
-  if (lowercase.checked) data.push(dataLowercase);
-  else if (uppercase.checked) data.push(dataUppercase);
+  let newPassword = "";
+  if (lowercase.checked) {
+    data.push(...dataLowercase);
+  }
+  if (uppercase.checked) {
+    data.push(...dataUppercase);
+  }
+  if (number.checked) {
+    data.push(...dataNumbers);
+  }
+  if (symbols.checked) {
+    data.push(...dataSymbols);
+  }
   console.log(data);
 };
 
 generatePassword();
 
-// event listener sur le click
+// // event listener sur le click fonction + get element
+// button.addEventListener("click", () => {
+//   generatePassword();
+// });
+
+// Sans fonction avec l'id en camelCase
+generateButton.addEventListener("click", generatePassword);
