@@ -5,6 +5,7 @@ const dataSymbols = "!:;,?./§ù^$*µ£¨%=)àç_è-(é&";
 const button = document.getElementById("generateButton");
 const rangeLength = document.getElementById("display-password-length");
 
+// Selectionne la valeur du range
 console.log(rangeLength.value);
 
 //Spread Operator ... Pour avoir tout les élément sur un tour de tableau
@@ -24,7 +25,11 @@ const generatePassword = () => {
   if (symbols.checked) {
     data.push(...dataSymbols);
   }
-  console.log(data);
+
+  for (let i = 0; i < rangeLength.value; i++) {
+    newPassword += data[Math.floor(Math.random() * data.length)];
+  }
+  passwordOutput.value = newPassword;
 };
 
 generatePassword();
