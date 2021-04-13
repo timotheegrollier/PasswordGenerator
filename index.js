@@ -1,0 +1,1 @@
+const dataLowercase = "azertyuiopqsdfghjklmwxcvbn";
