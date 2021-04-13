@@ -26,13 +26,24 @@ const generatePassword = () => {
     data.push(...dataSymbols);
   }
 
+  // On choppe l'index du tableau data qu'on remplace par un random * la longeur du tab floor arrondi le rés
+  //   console.log(data[5]);
+
+  //   La boucle for
   for (let i = 0; i < rangeLength.value; i++) {
     newPassword += data[Math.floor(Math.random() * data.length)];
   }
+  //   Ne pas oublier le += pour incrémenter chaque char
   passwordOutput.value = newPassword;
-};
 
-generatePassword();
+  //   Selectionner l'input
+  passwordOutput.select();
+  //   sur mobile
+  passwordOutput.setSelectionRange(0, 99999);
+
+  //   On execute la commande la copier le texte
+  document.execCommand("copy");
+};
 
 // // event listener sur le click fonction + get element
 // button.addEventListener("click", () => {
