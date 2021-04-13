@@ -1,6 +1,6 @@
 {
     "name": "Password Generator",
-    "short_name": "PP",
+    "short_name": "PassGen",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "white",
