@@ -48,7 +48,7 @@ const generatePassword = () => {
 
   setTimeout(() => {
     generateButton.innerHTML = "Générer le mot de passe";
-  }, 2000);
+  }, 2500);
 };
 
 // // event listener sur le click fonction + get element

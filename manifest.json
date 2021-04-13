@@ -1,0 +1,52 @@
+{
+    "name": "Password Generator",
+    "short_name": "PP",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "./password (2).png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "./password (3).png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "./password (4).png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },
+      {
+        "src": "./password (5).png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "./password (6).png",
+        "type": "image/png",
+        "sizes": "152x152"
+      },
+      {
+        "src": "./password (7).png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "./password (8).png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "./password (9).png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
