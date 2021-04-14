@@ -3,8 +3,14 @@
   padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 body {
-  background: tomato;
+  background: rgb(255, 219, 212);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +24,16 @@ body {
   padding: 30px;
   display: flex;
   flex-direction: column;
+  border-radius: 50px;
 }
 
 input[type="text"],
 input[type="number"] {
-  background: tomato;
+  background: rgb(255, 219, 212);
   border: none;
   outline: none;
   font-size: 1.2rem;
+  -moz-appearance: textfield;
 }
 
 .range-container {
