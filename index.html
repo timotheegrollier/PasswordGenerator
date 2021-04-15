@@ -2,51 +2,44 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./password (4).png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./password (4).png" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" href="./password (2).png">
-    <meta name="apple-mobile-web-app-status-bar" content="white">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="white">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./password (2).png" />
+    <meta name="apple-mobile-web-app-status-bar" content="white" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="white" />
 </head>
 
 <body>
-    <header>
     <div class="logo"></div>
-</header>
     <div class="app-container">
-        <input type="text" value="Générateur de MDP" id="passwordOutput" readonly>
+        <input type="text" value="Générateur de MDP" id="passwordOutput" readonly />
         <div class="range-container">
-
             <input type="range" name="" id="password-length" min="4" max="24" value="8"
-                oninput="document.getElementById('display-password-length').value=this.value">
-            <input type="number" id="display-password-length" value="8" min="4" max="24" readonly>
+                oninput="document.getElementById('display-password-length').value=this.value" />
+            <input type="number" id="display-password-length" value="8" min="4" max="24" readonly />
         </div>
 
         <div class="checkbox-container">
-            <input type="checkbox" id="lowercase" checked>
+            <input type="checkbox" id="lowercase" checked />
             <label for="lowercase">a-z</label>
 
-            <input type="checkbox" id="uppercase">
+            <input type="checkbox" id="uppercase" />
             <label for="uppercase">A-Z</label>
 
-
-            <input type="checkbox" id="number">
+            <input type="checkbox" id="number" />
             <label for="number">0-9</label>
 
-
-            <input type="checkbox" id="symbols" ! ?> <label for="symbols">!-?</label>
-
-
+            <input type="checkbox" id="symbols" ! ? />
+            <label for="symbols">!-?</label>
         </div>
         <button id="generateButton">Générer le mot de passe</button>
     </div>
-
 
     <script src="./index.js"></script>
     <script src="/app.js"></script>

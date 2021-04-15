@@ -3,20 +3,24 @@
   padding: 0;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.logo {
+  background: url(./password9.png) center/cover;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 10px;
 }
+
 
 body {
   background: rgb(255, 219, 212);
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
   overflow: hidden;
+  position: relative;
+  justify-content: center;
 }
 
 .app-container {
@@ -25,11 +29,12 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 50px;
+  background: rgb(230, 230, 230);
 }
 
 input[type="text"],
 input[type="number"] {
-  background: rgb(255, 219, 212);
+  background: rgb(230, 230, 230);
   border: none;
   outline: none;
   font-size: 1.2rem;
